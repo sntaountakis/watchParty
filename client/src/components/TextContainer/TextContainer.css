@@ -1,0 +1,37 @@
+.textContainer {
+    display: none;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    background: whitesmoke;
+     
+}
+
+
+
+.usersOnlineText{
+    display: flex;
+    font-size: medium;
+    color: rgb(22, 22, 22);
+    font-style: normal;
+    
+    align-self: center; 
+}
+
+/*
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .textContainer {
+      width: 20%;
+      height: 100%;
+    }
+  }
+  
+  @media (min-width: 480px) and (max-width: 1200px) {
+    .textContainer {
+      width: 30%;
+    }
+  }
+
+  */

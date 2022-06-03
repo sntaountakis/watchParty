@@ -1,0 +1,15 @@
+.searchBar{
+    padding-bottom: 10%;
+    width: 500px;
+}
+
+.videoInput {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-color: #FF0000;
+    padding: 10px;
+    box-shadow: #FF0000;
+    border-radius: 50px;
+    
+}
