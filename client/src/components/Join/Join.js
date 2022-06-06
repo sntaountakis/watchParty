@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import {v4 as uuidv4} from 'uuid';
 
 import './Join.css';
+import logo from '../../icons/watchParty-logo.png';
 
 const Join = () => {
     const [name, setName] = useState('');
@@ -46,14 +47,12 @@ const Join = () => {
     return (
         <div className="joinOuterContainer">
             <div className="titleContainer">
-                <span className="title titleWatch" style={titleWatch}>watch</span>
-                <span className="title titleParty" style={titleParty}>Party</span>
+                <img className="watchPartyLogo" src={logo} alt="logo"/>
             </div>
             <div className="joinInnerContainer">
-                <h1 className="heading">Join</h1>
                 <div><input placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} /></div>
-                {/*<div><input placeholder="Join" className="joinInput mt-20" type="text" onChange={(event) => setRoom(event.target.value)} /></div>*/}
-                <Link onClick={(event => startRoom(event))} to={`/chat?name=${name}&room=${room}`}>
+                <div><input placeholder="Room" className="joinInput mt-20" type="text" onChange={(event) => setRoom(event.target.value)} /></div>
+                <Link to={`/chat?name=${name}&room=${room}`}>
                     <button className="button mt-20" type="submit">Start Party</button>
                 </Link>
             </div>

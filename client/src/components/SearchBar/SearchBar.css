@@ -7,9 +7,9 @@
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    border-color: #FF0000;
+    background-color: #FFF5F0;
     padding: 10px;
-    box-shadow: #FF0000;
+    border: none; 
     border-radius: 50px;
     
 }

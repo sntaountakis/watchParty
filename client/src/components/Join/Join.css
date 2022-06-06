@@ -1,5 +1,5 @@
 html, body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     padding: 0;
     margin: 0;
   }
@@ -19,19 +19,24 @@ html, body {
     height: 100vh;
     align-items: center;
     flex-direction: column;
-    background-image: url('../../icons/login_background_bigger.jpg');
+    background-image: url('../../icons/cinema-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+
   }
   
   .joinInnerContainer {
-    margin: 5%;
+    margin: 3%;
     width: 20%;
   }
   
   .joinInput {
-    border-radius: 0;
+    border-radius: 8px;
     padding: 15px 20px;
     width: 100%;
+    background-color: #FFF5F0;
+    border: none;
   }
 
   .titleContainer {
@@ -40,28 +45,30 @@ html, body {
   
   }
 
-  .titleWatch {
-
-  }
-
-  .titleParty {
-
+  .watchPartyLogo {
+    display: flex;
+    margin-left: -10%;
+    align-self: center;
+    max-width: 100%;
   }
   
   .heading {
-    color: white;
+    color: #FFF5F0;
     font-size: 2.5em;
     padding-bottom: 10px;
     border-bottom: 2px solid white;
   }
   
   .button {
-      color: #fff !important;
+      color: #FFF5F0 !important;
       text-transform: uppercase;
       text-decoration: none;
-      background: #2979FF;
+      font-size: large;
+      font-weight: 600;
+      letter-spacing: 5px;
+      background: #B80000;
       padding: 20px;
-      border-radius: 5px;
+      border-radius: 8px;
       display: inline-block;
       border: none;
       width: 100%;
