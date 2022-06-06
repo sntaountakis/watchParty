@@ -2,6 +2,7 @@ const express = require('express');
 const socketio = require('socket.io')
 const http = require('http');
 const router = require('./router');
+const cors = require('cors')
 
 const {addUser, removeUser, getUser, getUsersInRoom, setCurrentRoomVideo, getCurrentRoomVideo} = require('./users.js');
 const { isBooleanObject } = require('util/types');
@@ -14,6 +15,9 @@ const io = new socketio.Server(httpServer, {
         origin: 'http://localhost:3000'
     }
 });
+
+app.use(router);
+app.use(cors());
 
 // Adming generated messages tag: message
 // User generated messages tag: userMessage
@@ -79,4 +83,3 @@ io.on('connection', (socket) => {
     })
 });
 httpServer.listen(PORT, () => console.log(`Server has started on port ${PORT}`))
-app.use(router);
